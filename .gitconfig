@@ -1,0 +1,22 @@
+[user]
+	name = Clive Evans
+	email = cliveevans@ntlworld.com
+[alias]
+   unstage = reset HEAD
+   rollback = reset --hard HEAD^ ; rolls back the last commit
+   pop = stash pop
+   sync = rebase -m -p origin/master ; less typing ...
+   update = !sh -c 'git fetch origin && git sync' ; fetch and rebase in one go
+   up = pull --ff-only
+   history = log --pretty=oneline --abbrev-commit --graph --decorate ; one line per commit, with branching etc.
+   comit = commit ; you would not believe how often I typo this ...
+   checkin = !sh -x -c 'git commit -a && git push origin' ; commit all tracked files and push
+[color]
+   ui = true
+   branch = true
+   diff = true
+   interactive = true
+[core]
+   autocrlf = input
+[push]
+	default = upstream

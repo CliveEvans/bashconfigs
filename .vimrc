@@ -19,9 +19,6 @@ set softtabstop=3
 set laststatus=2
 set pastetoggle=<F1>
 
-set bg=dark
-colorscheme ir_black
-
 nnoremap <tab> %
 vnoremap <tab> %
 nnoremap / /\v
@@ -31,6 +28,7 @@ vnoremap / /\v
 filetype plugin indent on
 syntax on
 syn sync fromstart
+colorscheme ir_black
 
 " syntax checking on save
 autocmd BufWritePost *.bash !bash -n <afile>
